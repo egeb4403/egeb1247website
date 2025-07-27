@@ -1,0 +1,226 @@
+/* 
+Author: Ezana Gebregiorgis
+Student No: 8944403 
+*/
+
+/*Html and Body styes*/
+
+/* Set global font and page background */
+html {
+    font: italic small-caps bold 20px/1.5 Arial, sans-serif;
+    background-color: #e6f2f2;
+    /* light bluish background */
+}
+
+/* Body wrapper settings */
+body {
+    max-width: 1200px;
+    /* keep it nice and readable */
+    margin: 0 auto;
+    /* center on the page */
+    padding: 2rem;
+    border: 0.5rem solid #ccc;
+    background-color: #ffffff;
+}
+
+main {
+    float: left;
+    width: 70%;
+    padding: 2rem;
+}
+
+aside {
+    float: right;
+    width: 30%;
+    padding: 2rem;
+}
+
+/* Make footer behave properly after float */
+footer {
+    clear: both;
+}
+
+
+/*headre and footer looks*/
+
+header {
+    font-size: 2.5rem;
+    background: linear-gradient(to right, #004d4d, #66cccc);
+    text-align: center;
+    color: white;
+}
+
+footer {
+    font-size: 0.8rem;
+    background: linear-gradient(to right, #004d4d, #66cccc);
+    text-align: center;
+    color: white;
+}
+
+/* Style all section headings */
+section h2 {
+    color: #004d4d;
+    font-variant: small-caps;
+    font-style: italic;
+    font-weight: bold;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+/*blackqute */
+
+blockquote {
+    font-style: italic;
+    background-color: #f0f0f0;
+    padding: 1rem;
+    border-left: 0.5rem solid #ccc;
+    width: 80%;
+    margin: 2rem auto;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+/* fig figcaption and image*/
+
+figure {
+    border: 0.3rem solid #ccc;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+figure img {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    border: 0.2rem solid #999;
+    border-radius: 1rem;
+}
+
+figcaption {
+    font-size: 0.8rem;
+    font-variant: small-caps;
+}
+
+/* ifarm*/
+
+iframe {
+    display: block;
+    margin: 2rem auto;
+    border: 0.4rem solid #ccc;
+    width: 90%;
+}
+
+/* quote serction*/
+
+section#famous-quote {
+    border: 0.3rem dashed #888;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    width: 80%;
+    margin: 2rem auto;
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    color: #003333;
+    padding: 2rem;
+    text-align: center;
+}
+
+/*links and lists*/
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #006666;
+}
+
+a:visited {
+    color: #993366;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ff6600;
+}
+
+a:active {
+    color: red;
+}
+
+/* table*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+th {
+    text-align: left;
+    font-weight: bold;
+    font-variant: small-caps;
+    color: white;
+    background-color: #004d4d;
+}
+
+td {
+    padding: 1rem;
+    border: 0.1rem solid #ccc;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e0f7fa;
+}
+
+
+/*form styling*/
+
+.form-label {
+    font-variant: small-caps;
+    font-weight: bold;
+    color: #004d4d;
+}
+
+.form-control {
+    padding: 0.8rem;
+    border: 0.1rem solid #999;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    width: 25rem;
+}
+
+
+/* responsiveness for mobiles*/
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+
+    main,
+    aside {
+        float: none;
+        width: 100%;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+
+    blockquote,
+    section#famous-quote,
+    figure,
+    iframe {
+        width: 100%;
+    }
+}
